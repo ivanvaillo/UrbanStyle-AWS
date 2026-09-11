@@ -242,18 +242,14 @@ Además, en el laboratorio la capa de aplicación se evidenció sobre subredes a
 
 ---
 
-## 9. Qué demuestra este proyecto
+## 9. Conclusiones
 
-1. Diseñar una VPC multi-AZ con separación de capas
-2. Encadenar ALB -> Target Group -> ASG -> EC2 y demostrar destinos `Healthy`
-3. Usar RDS como capa de datos gestionada
-4. Aplicar Security Groups por capa
-5. Documentar con honestidad el alcance real de un laboratorio frente a un diseño de producción
+Este proyecto permite demostrar, con evidencias, el diseño e implementación de una arquitectura AWS multi-AZ para una aplicación WordPress:
 
-### Defensa rápida en entrevista
+- networking con VPC y segmentación por capas
+- balanceo de carga con Application Load Balancer y Target Group
+- escalado horizontal con Auto Scaling y Launch Template
+- base de datos gestionada con Amazon RDS
+- control de tráfico con Security Groups
 
-| Pregunta | Respuesta alineada con evidencias |
-| --- | --- |
-| ¿Por qué hay servicios en el diagrama que no están en las capturas? | Porque el documento separa diseño objetivo e implementación de laboratorio. |
-| ¿Cómo demuestras HA? | Dos AZs, ALB, Target Group Healthy y ASG con mínimo 2. |
-| ¿Cuál sería el siguiente paso profesional? | IaC del núcleo, TLS real, EC2 en privadas con NAT, monitorización y evidencias de estado final. |
+La documentación distingue de forma explícita lo implementado en el laboratorio frente a los servicios contemplados solo en el diseño (Route 53, ACM, WAF, CloudWatch, Backup, IAM y S3). Esa separación deja claro el alcance real del trabajo y facilita entender qué parte de la arquitectura está validada con capturas.
