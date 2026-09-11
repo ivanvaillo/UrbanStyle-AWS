@@ -25,7 +25,7 @@ Amazon VPC · EC2 · Auto Scaling · ALB · Target Groups · RDS MySQL · Securi
 ```text
 README.md
 diagrams/          Diagramas lógico y de arquitectura
-documentation/     Documentación técnica completa + PDF de diseño
+documentation/     Documentación técnica completa
 screenshots/       Evidencias del despliegue en AWS
 ```
 

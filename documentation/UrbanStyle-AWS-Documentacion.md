@@ -33,7 +33,6 @@ UrbanStyle es una empresa ficticia de venta online de ropa, calzado y complement
 | --- | --- |
 | README | `README.md` |
 | Documentación completa | `documentation/` |
-| PDF de diseño | `documentation/UrbanStyle-AWS-Project.pdf` |
 | Diagramas | `diagrams/` |
 | Evidencias | `screenshots/` |
 
